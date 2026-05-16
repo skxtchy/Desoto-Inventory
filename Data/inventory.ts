@@ -26,4 +26,17 @@ export const inventory = [
     stock: 4,
     lowStock: false,
   },
-];
+];> 1 | import { inventory } from '@/data/inventory';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function ReportsPage() {
+  4 |   const totalBottles = inventory.reduce(
+Import map: aliased to relative './data/inventory' inside of [project]/
+https://nextjs.org/docs/messages/module-not-found
+    at <unknown> (./app/inventory/page.tsx:5:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./app/low-stock/page.tsx:1:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./app/reports/page.tsx:1:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+Error: Command "npm run build" exited with 1
